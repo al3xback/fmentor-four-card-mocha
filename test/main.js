@@ -4,7 +4,7 @@ import got from 'got';
 
 const { JSDOM } = jsdom;
 
-const url = 'https://al3xback.github.io/fmentor-four-card-flex/';
+const url = 'https://al3xback.github.io/fmentor-four-card-mocha/';
 
 const getData = () => {
 	return got(url)
