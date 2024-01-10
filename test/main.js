@@ -49,9 +49,9 @@ describe('DOM', () => {
 		assert.ok(sectionDescEl);
 	});
 
-	it('should have four card item elements', () => {
-		const cardItems = document.querySelectorAll('.card__list-item');
+	it('should have four card list item elements', () => {
+		const cardListItemElements = document.querySelectorAll('.card__list-item');
 
-		assert.equal(cardItems.length, 4);
+		assert.equal(cardListItemElements.length, 4);
 	});
 });
