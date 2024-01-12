@@ -50,8 +50,8 @@ describe('DOM', () => {
 	});
 
 	it('should have four card list item elements', () => {
-		const cardListItemElements = document.querySelectorAll('.card__list-item');
+		const cardListItemEls = document.querySelectorAll('.card__list-item');
 
-		assert.equal(cardListItemElements.length, 4);
+		assert.equal(cardListItemEls.length, 4);
 	});
 });
