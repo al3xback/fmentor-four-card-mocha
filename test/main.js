@@ -29,28 +29,33 @@ describe('DOM', () => {
 
 	it("should have a title element with a class of 'card'", () => {
 		const sectionHeadEl = document.querySelector('.section__head');
-		const sectionTitleEl = sectionHeadEl.querySelector('.section__title');
+		const cardsSummaryTitleEl = sectionHeadEl.querySelector(
+			'.cards-summary__title'
+		);
 
-		assert.ok(sectionTitleEl);
+		assert.ok(cardsSummaryTitleEl);
 	});
 
-	it("should have a subtitle element with a class of 'section__subtitle'", () => {
+	it("should have a subtitle element with a class of 'cards-summary__subtitle'", () => {
 		const sectionHeadEl = document.querySelector('.section__head');
-		const sectionSubtitleEl =
-			sectionHeadEl.querySelector('.section__subtitle');
+		const sectionSubtitleEl = sectionHeadEl.querySelector(
+			'.cards-summary__subtitle'
+		);
 
 		assert.ok(sectionSubtitleEl);
 	});
 
-	it("should have a description element with a class of 'section__desc'", () => {
+	it("should have a description element with a class of 'cards-summary__desc'", () => {
 		const sectionHeadEl = document.querySelector('.section__head');
-		const sectionDescEl = sectionHeadEl.querySelector('.section__desc');
+		const sectionDescEl = sectionHeadEl.querySelector(
+			'.cards-summary__desc'
+		);
 
 		assert.ok(sectionDescEl);
 	});
 
 	it('should have four card list item elements', () => {
-		const cardListItemEls = document.querySelectorAll('.card__list-item');
+		const cardListItemEls = document.querySelectorAll('.card');
 
 		assert.equal(cardListItemEls.length, 4);
 	});
